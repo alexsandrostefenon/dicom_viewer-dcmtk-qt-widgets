@@ -4,10 +4,8 @@ DICOM Image Viewer with DCMTK and Qt Widgets
 Developed with C++23 and Qt Creator IDE (https://doc.qt.io/qtcreator/).
 
 ## Features
-- Image viewer with auto-scalling and zoom control;
+- Image viewer with auto-scalling and zoom control (screens/screen-1.png);
 - Main DICOM properties.
-
-![image](screens/screen-1.png)
 ![image](screens/screen-2.png)
 
 ## Depends on :
