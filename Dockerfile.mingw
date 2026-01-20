@@ -1,0 +1,7 @@
+FROM docker.io/stateoftheartio/qt6:6.7-mingw-aqt
+RUN sudo apt-get update && sudo apt-get install -y locales tzdata ca-certificates libgl-dev libvulkan-dev libdcmtk-dev && sudo rm -rf /var/lib/apt/lists/*
+RUN sudo sed -i -e 's/# en_US.UTF-8 UTF-8/pt_BR.UTF-8 UTF-8/' /etc/locale.gen && sudo locale-gen
+ENV TZ="America/Sao_Paulo"
+ENV LANG pt_BR.UTF-8
+ENV LANGUAGE pt_BR:pt
+ENV LC_ALL pt_BR.UTF-8

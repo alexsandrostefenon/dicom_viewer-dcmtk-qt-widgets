@@ -15,7 +15,7 @@ LIBS += \
   -ldcmjpls \
   -ldcmjpeg \
   -ldcmimage \
-  -ldcmect \
+#-ldcmect \
   -ldcmfg \
   -ldcmiod \
   -ldcmpmap \
@@ -52,3 +52,7 @@ CONFIG += embed_translations
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+	Dockerfile \
+	README.md
